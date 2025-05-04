@@ -17,4 +17,6 @@ dependencies:
     - seaborn
     - emoji
     - wordcloud
+    - torchvision
+    - torchaudio
 
