@@ -1,10 +1,15 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 ### When write new code block, please write a Markdown that describes what you do in the code block
+
+This is a jupeter project, use BERT and some python packages to train a sentimental model for analizing and predict the emotion of a person. 
+
+- This project use datasets from Huggung
 
 ### IMPORTANT:
 - Always use Vietnamese
 - Easy to understand 
+- Always use markdown to describe the code first
