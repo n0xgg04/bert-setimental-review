@@ -1,10 +1,7 @@
 {
-    "mcpServers": {
-      "notebook_mcp": {
-        "command": "/Users/n0x/PycharmProjects/cursor-notebook-mcp/.venv/bin/cursor-notebook-mcp",
-        "args": [
-          "--allow-root", "/Users/n0x/PycharmProjects/BertSentimental/"
-        ]
-      }
+  "mcpServers": {
+    "notebook_mcp": {
+      "url": "http://127.0.0.1:8080/sse"
     }
   }
+}
