@@ -1,0 +1,19 @@
+name: imdb-sentiment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - torch
+    - transformers
+    - datasets==2.4.0
+    - huggingface-hub==0.10.0
+    - numpy
+    - pandas
+    - tqdm
+    - matplotlib
+    - seaborn
+    - emoji
+

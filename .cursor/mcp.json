@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+      "notebook_mcp": {
+        "command": "/Users/n0x/PycharmProjects/cursor-notebook-mcp/.venv/bin/cursor-notebook-mcp",
+        "args": [
+          "--allow-root", "/Users/n0x/PycharmProjects/BertSentimental/"
+        ]
+      }
+    }
+  }
