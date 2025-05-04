@@ -1,0 +1,11 @@
+torch --index-url https://download.pytorch.org/whl/cu118
+transformers
+datasets==2.4.0
+huggingface-hub==0.10.0
+numpy
+pandas
+tqdm
+matplotlib
+seaborn
+emoji
+wordcloud

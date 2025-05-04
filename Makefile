@@ -9,4 +9,5 @@ install-mcp:
 run-mcp:
 	cursor-notebook-mcp --allow-root /Users/n0x/PycharmProjects/BertSentimental/
 
-
+install-requirements:
+	pip install -r requirements.txt
