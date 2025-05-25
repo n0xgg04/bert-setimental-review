@@ -1,0 +1,38 @@
+
+=================================================================
+            BILSTM + ATTENTION MODEL - SUMMARY REPORT
+=================================================================
+
+📊 MODEL PERFORMANCE:
+   • Test Accuracy: 0.8855 (88.55%)
+   • Precision: 0.8705
+   • Recall: 0.9058
+   • F1-Score: 0.8878
+   • AUC-ROC: 0.9533
+
+⚡ PERFORMANCE:
+   • Training Time: ~360 seconds
+   • Inference Time: 16.81 ms/sample
+   • Model Size: 17.13 MB
+   • Memory Usage: 656.01 MB
+
+🔧 MODEL COMPLEXITY:
+   • Total Parameters: 1,488,629
+   • Trainable Parameters: 1,488,629
+   • Total Layers: 11
+   • Estimated FLOPs: 50,442,272
+
+📈 GENERALIZATION:
+   • Best Validation Accuracy: 0.8882
+   • Overfitting Status: Likely Overfitting
+   • Train-Val Accuracy Gap: 0.0966
+
+🎯 RELIABILITY:
+   • Average Confidence: 0.3936
+   • High Confidence Accuracy: 0.9435
+   • Low Confidence Predictions: 1405
+
+=================================================================
+Model và tất cả metrics đã được lưu trong thư mục 'bilstm/'
+Sẵn sàng để so sánh với BERT!
+=================================================================

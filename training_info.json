@@ -1,0 +1,12 @@
+{
+  "max_features": 10000,
+  "maxlen": 500,
+  "embedding_dim": 128,
+  "lstm_units": 64,
+  "batch_size": 32,
+  "epochs_trained": 6,
+  "final_train_accuracy": 0.9772400259971619,
+  "final_val_accuracy": 0.8806800246238708,
+  "final_train_loss": 0.07075676321983337,
+  "final_val_loss": 0.38334277272224426
+}

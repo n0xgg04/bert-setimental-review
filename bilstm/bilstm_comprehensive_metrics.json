@@ -1,0 +1,205 @@
+{
+  "model_info": {
+    "model_name": "BiLSTM + Attention",
+    "dataset": "IMDb Movie Reviews",
+    "task": "Binary Sentiment Classification",
+    "framework": "TensorFlow/Keras",
+    "training_date": "2025-05-25T12:01:35.498397",
+    "hyperparameters": {
+      "max_features": 10000,
+      "max_length": 500,
+      "embedding_dim": 128,
+      "lstm_units": 64,
+      "batch_size": 32,
+      "epochs": 10
+    }
+  },
+  "accuracy_metrics": {
+    "accuracy": 0.88548,
+    "precision": 0.8704543707234565,
+    "recall": 0.90576,
+    "specificity": 0.8652,
+    "f1_score": 0.8877563021915553,
+    "auc_roc": 0.9533154048000001,
+    "false_positive_rate": 0.1348,
+    "false_negative_rate": 0.09424,
+    "true_positives": 11322,
+    "true_negatives": 10815,
+    "false_positives": 1685,
+    "false_negatives": 1178
+  },
+  "performance_metrics": {
+    "estimated_training_time_seconds": 360.0,
+    "avg_inference_time_100_samples": 1.681422185897827,
+    "inference_time_per_sample_ms": 16.81422185897827,
+    "memory_usage_mb": 656.01171875,
+    "model_size_mb": 17.129966735839844,
+    "epochs_trained": 6
+  },
+  "generalization_metrics": {
+    "final_train_accuracy": 0.9772400259971619,
+    "final_validation_accuracy": 0.8806800246238708,
+    "final_train_loss": 0.07075676321983337,
+    "final_validation_loss": 0.38334277272224426,
+    "accuracy_gap": 0.09656000137329102,
+    "loss_gap": 0.3125860095024109,
+    "best_validation_accuracy": 0.888159990310669,
+    "best_validation_accuracy_epoch": 5,
+    "validation_accuracy_variance": 9.196559461003062e-05,
+    "overfitting_status": "Likely Overfitting"
+  },
+  "complexity_metrics": {
+    "total_parameters": 1488629,
+    "trainable_parameters": 1488629,
+    "non_trainable_parameters": 0,
+    "total_layers": 11,
+    "estimated_flops": 50442272,
+    "model_size_mb": 17.129966735839844,
+    "layer_details": [
+      {
+        "layer_index": 0,
+        "layer_name": "embedding",
+        "layer_type": "Embedding",
+        "output_shape": "(None, 500, 128)",
+        "param_count": 1280000
+      },
+      {
+        "layer_index": 1,
+        "layer_name": "dropout",
+        "layer_type": "Dropout",
+        "output_shape": "(None, 500, 128)",
+        "param_count": 0
+      },
+      {
+        "layer_index": 2,
+        "layer_name": "bidirectional",
+        "layer_type": "Bidirectional",
+        "output_shape": "(None, 500, 128)",
+        "param_count": 98816
+      },
+      {
+        "layer_index": 3,
+        "layer_name": "bidirectional_1",
+        "layer_type": "Bidirectional",
+        "output_shape": "(None, 500, 128)",
+        "param_count": 98816
+      },
+      {
+        "layer_index": 4,
+        "layer_name": "attention_layer",
+        "layer_type": "AttentionLayer",
+        "output_shape": "(None, 128)",
+        "param_count": 628
+      },
+      {
+        "layer_index": 5,
+        "layer_name": "dropout_1",
+        "layer_type": "Dropout",
+        "output_shape": "(None, 128)",
+        "param_count": 0
+      },
+      {
+        "layer_index": 6,
+        "layer_name": "dense",
+        "layer_type": "Dense",
+        "output_shape": "(None, 64)",
+        "param_count": 8256
+      },
+      {
+        "layer_index": 7,
+        "layer_name": "dropout_2",
+        "layer_type": "Dropout",
+        "output_shape": "(None, 64)",
+        "param_count": 0
+      },
+      {
+        "layer_index": 8,
+        "layer_name": "dense_1",
+        "layer_type": "Dense",
+        "output_shape": "(None, 32)",
+        "param_count": 2080
+      },
+      {
+        "layer_index": 9,
+        "layer_name": "dropout_3",
+        "layer_type": "Dropout",
+        "output_shape": "(None, 32)",
+        "param_count": 0
+      },
+      {
+        "layer_index": 10,
+        "layer_name": "dense_2",
+        "layer_type": "Dense",
+        "output_shape": "(None, 1)",
+        "param_count": 33
+      }
+    ]
+  },
+  "reliability_metrics": {
+    "average_confidence": 0.39363953471183777,
+    "confidence_std": 0.13121062517166138,
+    "high_confidence_accuracy": 0.9434580853424795,
+    "low_confidence_count": 1405,
+    "low_confidence_accuracy": 0.5430604982206406,
+    "error_rate_by_confidence_bins": [
+      0.4569395017793594,
+      0.34406678592725104,
+      0.25,
+      0.1520901274829528,
+      0.036953747037014484
+    ]
+  },
+  "training_history": {
+    "train_accuracy_history": [
+      0.6058800220489502,
+      0.7767199873924255,
+      0.9027199745178223,
+      0.9389200210571289,
+      0.9586399793624878,
+      0.9772400259971619
+    ],
+    "val_accuracy_history": [
+      0.667959988117218,
+      0.8608400225639343,
+      0.8854799866676331,
+      0.8801599740982056,
+      0.888159990310669,
+      0.8806800246238708
+    ],
+    "train_loss_history": [
+      0.6635839343070984,
+      0.4827162027359009,
+      0.2592467665672302,
+      0.1738411784172058,
+      0.12494362145662308,
+      0.07075676321983337
+    ],
+    "val_loss_history": [
+      0.6520557999610901,
+      0.32966816425323486,
+      0.2828045189380646,
+      0.29551035165786743,
+      0.33955833315849304,
+      0.38334277272224426
+    ]
+  },
+  "additional_metrics": {
+    "dataset_size": {
+      "train_samples": 25000,
+      "test_samples": 25000,
+      "total_samples": 50000
+    },
+    "class_distribution": {
+      "train_positive": 12500,
+      "train_negative": 12500,
+      "test_positive": 12500,
+      "test_negative": 12500
+    },
+    "prediction_stats": {
+      "predicted_positive": 13007,
+      "predicted_negative": 11993,
+      "avg_positive_confidence": 0.8671090602874756,
+      "avg_negative_confidence": 0.807565450668335
+    }
+  }
+}
